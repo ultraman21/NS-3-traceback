@@ -1,0 +1,43 @@
+LAN       R5        1         0         R8        0         
+LAN       R6        1         0         R8        0         
+LAN       R7        1         0         R8        0         
+LAN       R10       1         0         R9        0         
+LAN       R11       1         0         R9        0         
+LAN       R12       1         0         R9        0         
+LAN       R13       1         0         R16       0         
+LAN       R14       1         0         R16       0         
+LAN       R15       1         0         R16       0         
+LAN       R17       1         0         R4        0         
+LAN       R18       1         0         R4        0         
+LAN       R19       1         0         R4        0         
+Router    R8        2         0         LAN1      0         
+Router    R8        2         1         R1        3         2,5       3,5       4,5       
+Router    R9        2         0         LAN2      0         
+Router    R9        2         1         R2        3         2,16      3,16      4,16      
+Router    R16       2         0         LAN3      0         
+Router    R16       2         1         R3        3         10,5      11,5      12,5      
+Router    R1        5         0         LAN_R1    0         
+Router    R1        5         1         R8        3         2,5       3,5       4,5       
+Router    R1        5         2         R2        9         5,6       5,7       5,8       5,9       5,10      5,11      5,12      5,13      
+Router    R1        5         3         R3        3         6,5       7,5       8,5       
+Router    R1        5         4         R4        8         6,7       7,8       7,9       7,10      7,11      7,12      7,13      8,14      
+Router    R2        4         0         LAN_R2    0         
+Router    R2        4         1         R9        3         2,16      3,16      4,16      
+Router    R2        4         2         R1        8         5,6       5,7       5,8       5,9       5,10      5,11      5,12      5,13      
+Router    R2        4         3         R4        3         6,16      7,16      8,16      
+Router    R3        4         0         LAN_R3    0         
+Router    R3        4         1         R1        3         6,5       7,5       8,5       
+Router    R3        4         2         R4        8         9,6       9,7       9,8       9,9       9,10      9,11      9,12      9,13      
+Router    R3        4         3         R16       3         10,5      11,5      12,5      
+Router    R4        4         0         LAN4      0         
+Router    R4        4         1         R1        8         6,7       7,8       7,9       7,10      7,11      7,12      7,13      8,14      
+Router    R4        4         2         R2        3         6,16      7,16      8,16      
+Router    R4        4         3         R3        8         9,6       9,7       9,8       9,9       9,10      9,11      9,12      9,13      
+NET       net1      R8        R1        
+NET       net2      R2        R9        
+NET       net3      R1        R2        
+NET       net4      R1        R3        
+NET       net5      R1        R4        
+NET       net6      R2        R4        
+NET       net7      R3        R4        
+NET       net8      R3        R16       
